@@ -1,2 +1,6 @@
 /node_modules
 package-lock.json
+yarn.lock
+/client/node_modules
+/client/yarn.lock
+/client/package-lock.json
