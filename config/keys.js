@@ -1,4 +1,4 @@
 module.exports = {
-  mongoURI: "YOUR_MONGO_URI_HERE",
+  mongoURI: 'mongodb+srv://admin:Myrk4382@dev.ruigw.mongodb.net/DynamicQRDev?retryWrites=true&w=majority',
   secretOrKey: "secret"
 };
