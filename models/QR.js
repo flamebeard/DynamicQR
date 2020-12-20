@@ -2,27 +2,27 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 // Create Schema
-const UserSchema = new Schema({
-  name: {
+const QrSchema = new Schema({
+  qr_id: {
     type: String,
     required: true
   },
-  email: {
+  url: {
     type: String,
     required: true
   },
-  password: {
+  redirectUrl: {
     type: String,
+    required: true
+  },
+  counter: {
+    type: number,
     required: true
   },
   date: {
     type: Date,
     default: Date.now
-  },
-  qr_codes: {
-    type: Array,
-    required: false
   }
 });
 
-module.exports = User = mongoose.model("users", UserSchema);
+module.exports = QR = mongoose.model("qrs", QrSchema);
